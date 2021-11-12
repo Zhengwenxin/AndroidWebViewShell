@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">工艺操作指导书</string>
+
+    <string name="title_home">功能</string>
+    <string name="title_dashboard">扫码</string>
+    <string name="title_notifications">菜单</string>
+
+    <!--~~~~~~~~~~~~~~~~~~登录~~~~~~~~~~~~~~~~~~~-->
+    <string name="login_btn_text">登录</string>
+    <string name="login_text_hint_orgcode">组织编码</string>
+    <string name="login_text_hint_username">用户名</string>
+    <string name="login_text_hint_password">密码</string>
+
+    <!-- ProgressDialog-->
+    <string name="progress_dialog_title">Progress Dialog</string>
+    <string name="progress_please_wait">Please wait…</string>
+
+    <string name="up_for_cancel">手指上滑，取消发送</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="time_too_short">录音时间过短</string>
+
+    <string name="long_click_record">长按 录音</string>
+    <string name="hang_up_finsh">松开 结束</string>
+    <string name="release_cancel">松开 取消</string>
+
+    <string name="title_index">首页</string>
+    <string name="title_dm_work">设备管理-作业</string>
+    <string name="title_dm_device">设备管理-设备</string>
+    <string name="title_dm_create_repair">创建维修工单</string>
+    <string name="title_login">登录</string>
+    <string name="title_dm_work_info">作业详情</string>
+    <string name="title_dm_device_info">设备详情</string>
+
+    <!-- Donate dialog -->
+    <string name="donate_dialog_title">Support me</string>
+    <string name="donate_dialog_message">If you like this library project and you are willing to support me, you can donate me via Alipay or PayPal.\n\nAlipay: fythonx\@gmail.com\nPayPal: Click PAYPAL button to open a new tab.</string>
+    <string name="doante_dialog_paypal_button">PayPal</string>
+
+    <!-- Navigation Menu -->
+    <string name="item_vertical_stepper">Vertical Stepper (Item View)</string>
+    <string name="item_vertical_stepper_adapter">Vertical Stepper (Adapter)</string>
+
+    <!-- Vertical Stepper View Sample Item -->
+    <string name="content_step_0">This is the first step. Click OK button to next step.\n\nTest Message.</string>
+    <string name="content_step_1">This is the second step. Click OK button to next step or Cancel button to previous step.\n\nThe summary text of each step is optional. If you haven\'t set, summary view won\'t be displayed.</string>
+    <string name="content_step_2">This is the last step. You can finish steps now.</string>
+
+    <string name="toggle_animation_button">Toggle Animation</string>
+
+
+</resources>

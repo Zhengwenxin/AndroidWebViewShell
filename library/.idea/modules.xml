@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MaterialStepperView-master.iml" filepath="$PROJECT_DIR$/../MaterialStepperView-master.iml" group="MaterialStepperView-master" />
+      <module fileurl="file://$PROJECT_DIR$/../demo/demo.iml" filepath="$PROJECT_DIR$/../demo/demo.iml" group="MaterialStepperView-master/demo" />
+      <module fileurl="file://$PROJECT_DIR$/../demo-kotlin/demo-kotlin.iml" filepath="$PROJECT_DIR$/../demo-kotlin/demo-kotlin.iml" group="MaterialStepperView-master/demo-kotlin" />
+      <module fileurl="file://$PROJECT_DIR$/library.iml" filepath="$PROJECT_DIR$/library.iml" group="MaterialStepperView-master/library" />
+    </modules>
+  </component>
+</project>

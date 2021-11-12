@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: moe.feng:AlipayZeroSdk:1.1@aar">
+    <CLASSES>
+      <root url="jar://F:/dev/AndroidSDK/.gradle/caches/transforms-2/files-2.1/257a71197f3f4c4817d31845c13f6de4/AlipayZeroSdk-1.1/jars/classes.jar!/" />
+      <root url="file://F:/dev/AndroidSDK/.gradle/caches/transforms-2/files-2.1/257a71197f3f4c4817d31845c13f6de4/AlipayZeroSdk-1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/dev/AndroidSDK/.gradle/caches/modules-2/files-2.1/moe.feng/AlipayZeroSdk/1.1/45e7f4e3a8853f677dcd1d946d3e22476dd40400/AlipayZeroSdk-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
