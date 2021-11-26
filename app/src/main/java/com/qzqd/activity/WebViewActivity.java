@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.qzqd.R;
 import com.qzqd.initialization.MyActivityManager;
 import com.qzqd.initialization.MyApplication;
+import com.qzqd.util.LogUtils;
 import com.qzqd.util.LoginUserUtilsSP;
 
 import java.util.Map;
@@ -80,10 +81,21 @@ public class WebViewActivity extends AppCompatActivity {
         settings.setBuiltInZoomControls(false);
         settings.setLoadWithOverviewMode(true);
         webview1.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
-        // 最小缩放等级
-        webview1.setInitialScale(Integer.parseInt((webInfo.get("zoom"))));
+        // 最小缩放等级 默认为100%
+        String zoomStr = webInfo.get("zoom");
+        if ("".equals(zoomStr)||zoomStr==null) {
+            zoomStr ="100";
+        }
+        Integer zoom = Integer.parseInt(zoomStr);
+        webview1.setInitialScale(zoom);
 
         String webViewUrl = webInfo.get("webViewUrl");
+
+        //默认请求地址
+        if("".equals(webViewUrl)||webViewUrl==null){
+            webViewUrl= "http://192.168.1.200:8081/dist/#/login";
+        }
+        String finalWebViewUrl = webViewUrl;
 
         //如果不设置WebViewClient，请求会跳转系统浏览器
         webview1.setWebViewClient(new WebViewClient() {
@@ -94,7 +106,7 @@ public class WebViewActivity extends AppCompatActivity {
                 //返回false，意味着请求过程里，不管有多少次的跳转请求（即新的请求地址），均交给webView自己处理，这也是此方法的默认处理
                 //返回true，说明你自己想根据url，做新的跳转
                 if (url.toString().contains("sina.cn")){
-                    view.loadUrl(webViewUrl);
+                    view.loadUrl(finalWebViewUrl);
                     return true;
                 }
 
@@ -108,7 +120,7 @@ public class WebViewActivity extends AppCompatActivity {
                 //返回true，说明你自己想根据url，做新的跳转
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     if (request.getUrl().toString().contains("sina.cn")){
-                        view.loadUrl(webViewUrl);
+                        view.loadUrl(finalWebViewUrl);
                         return true;
                     }
                 }
@@ -119,6 +131,9 @@ public class WebViewActivity extends AppCompatActivity {
         });
 
         webview1.loadUrl(webViewUrl);
+        LogUtils.i("WebView Initialization complete...");
+        LogUtils.i("zoom:"+zoom+"%");
+        LogUtils.i("url:"+webViewUrl);
     }
 
 }
